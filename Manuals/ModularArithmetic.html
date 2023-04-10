@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Modular Arithmetic — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <script src="js/ktane-utils.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Modular Arithmetic</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Module Name.svg" class="diagram">
+                <h2>On the Subject of Modular Arithmetic</h2>
+                <p class="flavour-text">Get it?</p>
+
+                <ul>
+                    <li>
+                        To solve the module, a number, x, must be determined using a series of calculations invloving modular arithmetic. x will be obtained using the chinese remainder theorem on 3 congruences.
+                    </li>
+                    <li>
+                        The moduli of the congruences are given by which LED's are flashing. From right to left, the LED's correspond to the first five primes.
+                        <ul>
+                            <li>
+                                The red LED is the moduli of the first congruence.
+                            </li>
+                            <li>
+                                The green LED is the second.
+                            </li>
+                            <li>
+                                The blue LED is the last.
+                            </li>
+                        </ul>
+                        The moduli are denoted p1, p2 and p3.
+                    </li>
+                    <li>
+                        The number of times the LED's flash per cycle is called F. The symbol DS denotes the digit sum of the digits in the serial number.
+                    </li>
+                    <li>
+                        To input the number x, convert it to ternary and press the three buttons in the correct sequence.
+                    </li>
+                </ul>
+
+                <h3> The congruences
+                </h3>
+                    <table>
+                        <tr>
+                            <th>First congruence</th>
+                            <td>
+                                x &equiv; F<sup>DS</sup> (mod p1)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Second congruence</th>
+                            <td>
+                                x &equiv; F<sup>-1</sup> (mod p2)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Third congruence</th>
+                            <td>
+                                x &equiv; F + DS + (F+DS)? (mod p3) <br />
+                                where x? denotes the Legendre symbol with respect to p3.
+                            </td>
+                        </tr>
+                    </table>
+
+            </div>
+            <div class="page-footer relative-footer">Page 1 of 2</div>
+        </div>
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Number theory</span>
+            </div>
+            <div class="page-content">
+                <h2>Appendix A: Number theory</h2>
+                
+                <h3>The chinese remainder theorem</h3>
+
+                <h3>Legendre symbol</h3>
+                The Legendre symbol, denoted here as x? and more commonly as a parenthesized fraction is a number that describes whether a given number is a quadratic residue modulo another. Given an odd prime p, the number x is a quadratic residue if the congruence <br />
+                &emsp; &emsp; a<sup>2</sup> &equiv; x (mod p) <br />
+                Has a solution. If this is the case, the value of the Legendre symbol is 1. If this is not the case, the value is -1. In the special case where p | x, the value of the symbol is zero.
+
+                When calculating Legendre symbols, one can employ brute-force for small inputs. However for larger values, the following theorem due to Euler is practical. <br />
+                &emsp; &emsp; x? &equiv; x<sup>(p - 1) / 2</sup> (mod p)
+
+            <div class="page-footer relative-footer">Page 2 of 2</div>
+        </div>
+    </div>
+</body>
+</html>
