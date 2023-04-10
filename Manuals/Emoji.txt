@@ -1,0 +1,8 @@
+1. Determine group
+Do calculations (perhaps 1 or 2) to determine which of the 5 groups of order 8 is in use.
+The aarrows select different emojis, and the button submits. After a short time the result appears.
+Use the Cayley Tables in appendix to find the correct group. Ismorphic emojis can also be found in appendix.
+2. Determine calculation targets
+The amount of options for the left and right input give row numbers which must be achieved. In easy mode, repeats still count.
+3. Calculate
+Find two pairs of emojis that create the 2 calculation targets. Input these in order to disarm the module.
